@@ -64,27 +64,26 @@
     <div class="container-fluid p-0">
       
       <section class="first" id="first">
+        <canvas class="background"></canvas>
         <div class="svg-box">
-            <svg  viewbox="0 0 100 100">
+            <svg  viewbox="0 0 160 160">
                   <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                       <stop offset="0%" style="stop-color:rgb(146, 254, 157);stop-opacity:1" />
                       <stop offset="100%" style="stop-color:rgb(0, 201, 255);stop-opacity:1" />
                     </linearGradient>
                   </defs>
-               <circle cx="50" cy="50" r="50" fill="url(#grad1)"></circle>
+               <circle cx="80" cy="80" r="50" fill="url(#grad1)" ></circle>
             </svg>
-            <div class="svg-shadow">
-                
-            </div>
+            
         </div>
-        <div class="my-photo">
-          <img class="rounded-circle" src="img/profile.jpg" alt="">
-        </div>
+        <div class="svg-shadow"></div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        
+         <div class="my-photo">
+          <img class="rounded-circle" src="img/profile.jpg" alt="">
+        </div>
         <div class="my-auto">
           <h1 class="mb-0">Modrakowski
             <span class="text-primary">Przemysław</span>
@@ -305,6 +304,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Particles JS -->
+    <script src="vendor/particles.js/particles.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/script.js"></script>

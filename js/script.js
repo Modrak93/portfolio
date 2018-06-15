@@ -1,5 +1,15 @@
 (function($) {
   "use strict"; // Start of use strict
+    
+    
+  // Particles    
+  window.onload = function() {
+      Particles.init({
+        selector: '.background',
+        color: '#ffffff',
+          speed: 0.25,
+      });
+    };
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

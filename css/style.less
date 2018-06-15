@@ -153,7 +153,20 @@ a:hover, a:focus, a:active {
 .first {
     overflow: hidden;
     height: 47vh;
-    padding-top: 100px;
+    position: relative;
+//    background: #000000;  
+//    background: -webkit-linear-gradient(to right, #434343, #000000); 
+//    background: linear-gradient(to right, #434343, #000000); 
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .background {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
     .svg-box {
         position: relative;
         svg {
@@ -161,34 +174,27 @@ a:hover, a:focus, a:active {
             z-index: 4;
             width: 100%; 
             height: 100vh; 
-            background-color: aqua;
             -webkit-animation-name: oval;
-            -webkit-animation-duration: 4s;
+            -webkit-animation-duration: 10s;
             -webkit-animation-iteration-count: infinite;
             animation-name: oval;
-            animation-duration: 4s;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
+            circle {
+                -webkit-filter: drop-shadow(0px 0px 10px #7AE2FF);
+                  filter: drop-shadow(0px 0px 10px #7AE2FF);
+            }
         }
-        .svg-shadow {
-            box-shadow: 0 -60px 20px -25px inset @dark-blue;
+    }
+    .svg-shadow {
+            box-shadow: 0 -60px 30px -28px inset  #203A43;
             height: 10vh;
             position: absolute;
-            bottom: 68%;
+            bottom: 0;
             z-index: 5;
             width: 100%;
         }
-    }
-    .my-photo {
-        position: absolute;
-        z-index: 6;
-        top: 30%;
-        left: 50%;
-        img {
-            width: 250px;
-            height: auto;
-        }
-    }
 }
 
 /* Safari 4.0 - 8.0 */
@@ -201,4 +207,19 @@ a:hover, a:focus, a:active {
 @keyframes oval {
     0%   {transform: rotate(0deg) }
     100% {transform: rotate(360deg) }
+}
+
+// Second Section 
+
+#about {
+    .my-photo {
+        position: absolute;
+        z-index: 6;
+        top: 30%;
+        left: 50.7%;
+        img {
+            width: 250px;
+            height: auto;
+        }
+    }
 }
