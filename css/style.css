@@ -126,7 +126,7 @@ section.resume-section .resume-item .resume-date {
     padding-bottom: 3rem !important;
   }
   section.resume-section {
-    min-height: 100vh;
+    min-height: 75vh;
   }
 }
 .bg-primary {
