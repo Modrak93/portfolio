@@ -22,8 +22,8 @@ h6 {
   color: #343a40;
 }
 h1 {
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
 }
 @media (min-width: 991px) {
   h1 {
@@ -32,7 +32,13 @@ h1 {
   }
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+@media (min-width: 991px) {
+  h2 {
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+  }
 }
 .subheading {
   text-transform: uppercase;
@@ -58,6 +64,9 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+}
+.navbar-brand {
+  font-size: 1.1rem;
 }
 @media (min-width: 992px) {
   #sideNav {
@@ -107,9 +116,6 @@ section.resume-section .resume-item .resume-date {
   min-width: none;
 }
 @media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
@@ -118,6 +124,9 @@ section.resume-section .resume-item .resume-date {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
+  }
+  section.resume-section {
+    min-height: 100vh;
   }
 }
 .bg-primary {
@@ -133,6 +142,13 @@ a:hover,
 a:focus,
 a:active {
   color: #017efe;
+}
+#mainContainer {
+  overflow: hidden;
+}
+#enBtn,
+#plBtn {
+  cursor: pointer;
 }
 .first {
   overflow: hidden;
@@ -201,33 +217,28 @@ a:active {
     transform: rotate(360deg);
   }
 }
+#about .phone-number {
+  font-size: 2rem;
+  color: #017efe;
+}
 #about .my-photo {
-  position: absolute;
+  text-align: center;
   z-index: 6;
-  top: 46%;
-  left: 35.33%;
+  margin-top: -130px;
 }
 @media (max-width: 374px) {
-  #about .my-photo {
-    left: 32.7%;
-  }
+  
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  #about .my-photo {
-    left: 41.8%;
-  }
+  
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #about .my-photo {
-    left: 33.8%;
-    top: 40%;
+    margin-top: -170px;
   }
 }
 @media (min-width: 992px) {
-  #about .my-photo {
-    left: 50.7%;
-    top: 30%;
-  }
+  
 }
 #about .my-photo img {
   width: 110px;
@@ -236,6 +247,23 @@ a:active {
 @media (min-width: 768px) {
   #about .my-photo img {
     width: 250px;
+  }
+}
+#portfolio .portfolio-item .portfolio-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.35rem;
+  color: #017efe;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+#portfolio .portfolio-item .portfolio-title:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  #portfolio .portfolio-item .portfolio-title {
+    padding-top: 15px;
   }
 }
 
