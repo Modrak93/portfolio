@@ -1,3 +1,5 @@
+@white: #ffffff;
+@dark: #000A23;
 @dark-blue: #194A93;
 @main-blue: #017EFE;
 
@@ -73,10 +75,23 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+  color: @white;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link.active {
+    color: @dark;
 }
 
 .navbar-brand {
     font-size: 1.1rem;
+}
+.contact {
+    color: @dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    span {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 992px) {
@@ -111,10 +126,7 @@ h2 {
     flex-direction: column;
     width: 100%;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  #sideNav .navbar-collapse .navbar-nav .nav-item, #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
 }

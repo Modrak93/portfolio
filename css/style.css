@@ -64,9 +64,21 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
+}
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: #000a23;
 }
 .navbar-brand {
   font-size: 1.1rem;
+}
+.contact {
+  color: #000a23;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contact span {
+  font-size: 2rem;
 }
 @media (min-width: 992px) {
   #sideNav {
@@ -100,9 +112,7 @@ h2 {
     flex-direction: column;
     width: 100%;
   }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item,
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
